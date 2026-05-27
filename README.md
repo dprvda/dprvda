@@ -7,8 +7,8 @@ This was not the plan. Having way too much fun.</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Claude%20tokens-~104B-8957e5?style=for-the-badge" alt="~104B Claude tokens">
-  <a href="https://ccgather.com/leaderboard"><img src="https://img.shields.io/badge/ccgather-%231%20global-f5a623?style=for-the-badge" alt="#1 globally on ccgather"></a>
+  <a href="https://ccgather.com/leaderboard"><img src="https://img.shields.io/badge/%E2%9A%A1%20Claude%20tokens-~104B-0d1117?style=for-the-badge&labelColor=0d1117" alt="~104B Claude tokens"></a>
+  <a href="https://ccgather.com/leaderboard"><img src="https://img.shields.io/badge/%F0%9F%8F%86%20ccgather-%231%20global-0d1117?style=for-the-badge&labelColor=0d1117" alt="#1 globally on ccgather"></a>
 </p>
 ### Stack
 
