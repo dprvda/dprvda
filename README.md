@@ -2,7 +2,7 @@
 
 <p align="center">
 <i>L'Oréal, Crocs, Lacoste, Breitling, etc. — a small slice of the list.<br>
-60 days ago, my first real lines of code. This was not the plan. Having way too much fun.</i>
+Always had code under the design work. In March 2026 I went all-in. This was not the plan. Having way too much fun.</i>
 </p>
 
 <p align="center">
@@ -12,11 +12,13 @@
 
 ### The strange journey
 
-5 years designing things for brands you've heard of. One day I wrote a Python script to automate the boring parts. Then I asked Claude to help with the script. Then I forgot to stop.
+5 years designing things for brands you've heard of — always with a scripting layer underneath. Custom Houdini functions and sim setups. Render farms. Project-management app experiments. And one production pipeline that automated rendering **6000 CGI videos** through hundreds of Python scripts gluing C4D, After Effects, Houdini, ffmpeg, Blender, and whatever else the deliverable needed.
 
-60 days later: 20+ projects on disk, ~104B Claude tokens through the wire, somehow #1 globally on usage. Some ship to production. Some are research. Some started as one thing and accidentally became another. None were the plan.
+It always felt like part of the job, not a career. Then in March 2026 I asked Claude to help with a script. Then I asked for one more thing. Then I forgot to stop. Somewhere in there it stopped being a layer under design work and became *the* thing.
 
-### What 60 days looks like
+20+ projects on disk now, ~104B Claude tokens through the wire, somehow #1 globally on usage. Some ship to production. Some are research. Some started as one thing and accidentally became another. None were the plan.
+
+### Since March 2026
 
 - **Autonomous research pipelines** — orchestrating swarms of headless AI workers across isolated git worktrees. Stream-JSON parsing of subprocess output, quota-wall recovery (parse → sleep → resume), exhaustion detection, supervisor-of-supervisors crash recovery, multi-channel alerting across 6 fan-outs.
 - **Sub-millisecond reactive systems** in Rust — 8-crate workspace, Tokio + lock-free shared-memory IPC, 11 simultaneous venue feeds, deterministic simulation harness with production parity, atomic SQLite-WAL → Parquet snapshots, cross-compilation to ARM production targets.
@@ -38,7 +40,7 @@ Rust (Tokio · Alloy · ONNX · iceoryx2 · sqlx) · Python (Flask · NetworkX �
 
 ### Receipts
 
-- 5 years a designer · 60 days a developer
+- Designer for 5 years · developer since March 2026
 - ~104B Claude tokens · #1 globally on [ccgather](https://ccgather.com/leaderboard)
 - ~1.7B tokens / day average · 1,828 sessions
 - 20+ active projects · 448 memory files
