@@ -1,6 +1,6 @@
 # Danylo Pravda
 
-Transitioned from motion design into software. Now building automation, agentic AI tooling, and the occasional bot. Kyiv-based.
+Just walked away from a 5-year career as Senior 3D designer in a Kyiv studio (L'Oréal, Crocs, Lacoste, Breitling, and other premium brands) to write software. Two months in, ~104B Claude tokens deep, somehow #1 globally on usage. This was not the plan. Having way too much fun.
 
 ### Stack
 
@@ -12,8 +12,6 @@ Rust · Python · TypeScript · whatever the problem needs
 - Trading / market automation
 - Tooling for learning and knowledge work
 - Small, opinionated tools that do one thing well
-
-_~104B tokens through Claude so far (#1 globally as of May 2026)._
 
 ---
 
