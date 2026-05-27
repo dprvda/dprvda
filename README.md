@@ -1,6 +1,10 @@
-# Danylo Pravda
+<h1 align="center">🎨 → 💻 · Plot twist</h1>
 
-Just walked away from 5 years as Senior 3D designer on global brand work (L'Oréal, Crocs, Lacoste, Breitling, etc. — a small slice of the list) to write software. Two months in, ~104B Claude tokens deep, somehow #1 globally on usage. This was not the plan. Having way too much fun.
+<p align="center">
+<i>5 years as Senior 3D designer (L'Oréal, Crocs, Lacoste, Breitling, etc. — a small slice of the list).<br>
+Two months ago I started writing software. Already ~104B Claude tokens deep, #1 globally on usage.<br>
+This was not the plan. Having way too much fun.</i>
+</p>
 
 ### Stack
 
