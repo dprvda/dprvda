@@ -6,6 +6,10 @@ Two months ago I started writing software. Already ~104B Claude tokens deep, #1 
 This was not the plan. Having way too much fun.</i>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude%20tokens-~104B-8957e5?style=for-the-badge" alt="~104B Claude tokens">
+  <a href="https://ccgather.com/leaderboard"><img src="https://img.shields.io/badge/ccgather-%231%20global-f5a623?style=for-the-badge" alt="#1 globally on ccgather"></a>
+</p>
 ### Stack
 
 Rust · Python · TypeScript · whatever the problem needs
