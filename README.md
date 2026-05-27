@@ -1,4 +1,4 @@
-<h1 align="center">🎨 → 💻 · Plot twist</h1>
+<h1 align="center">Dropped a 5-year Senior 3D designer career to vibe code... huh 🤷</h1>
 
 <p align="center">
 <i>5 years as Senior 3D designer (L'Oréal, Crocs, Lacoste, Breitling, etc. — a small slice of the list).<br>
