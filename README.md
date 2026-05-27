@@ -19,6 +19,6 @@ Rust · Python · TypeScript · whatever the problem needs
 
 ---
 
-![stats](https://dprvda-stats.vercel.app/api?username=dprvda&show_icons=true&count_private=true&theme=tokyonight&hide_border=true)
-![langs](https://dprvda-stats.vercel.app/api/top-langs/?username=dprvda&layout=compact&count_private=true&theme=tokyonight&hide_border=true&langs_count=8)
-![graph](https://github-readme-activity-graph.vercel.app/graph?username=dprvda&theme=tokyo-night&hide_border=true&area=true)
+![stats](https://dprvda-stats.vercel.app/api?username=dprvda&show_icons=true&count_private=true&theme=github_dark&hide_border=true)
+![langs](https://dprvda-stats.vercel.app/api/top-langs/?username=dprvda&layout=compact&count_private=true&theme=github_dark&hide_border=true&langs_count=8)
+![graph](https://github-readme-activity-graph.vercel.app/graph?username=dprvda&theme=github-compact&hide_border=true&area=true)
