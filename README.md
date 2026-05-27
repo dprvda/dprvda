@@ -10,6 +10,7 @@ This was not the plan. Having way too much fun.</i>
   <a href="https://ccgather.com/profile/dprvda"><img src="https://img.shields.io/badge/%E2%9A%A1%20Claude%20tokens-~104B-0d1117?style=for-the-badge&labelColor=0d1117" alt="~104B Claude tokens"></a>
   <a href="https://ccgather.com/profile/dprvda"><img src="https://img.shields.io/badge/%F0%9F%8F%86%20ccgather-%231%20global-0d1117?style=for-the-badge&labelColor=0d1117" alt="#1 globally on ccgather"></a>
 </p>
+
 ### Stack
 
 Rust · Python · TypeScript · whatever the problem needs
