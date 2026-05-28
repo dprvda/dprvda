@@ -23,12 +23,13 @@ It always felt like part of the job, not a career. Then in March 2026 I asked Cl
 - **Autonomous research pipelines** — orchestrating swarms of headless AI workers across isolated git worktrees. Stream-JSON parsing of subprocess output, quota-wall recovery (parse → sleep → resume), exhaustion detection, supervisor-of-supervisors crash recovery, multi-channel alerting across 6 fan-outs.
 - **Sub-millisecond reactive systems** in Rust — 8-crate workspace, Tokio + lock-free shared-memory IPC, 11 simultaneous venue feeds, deterministic simulation harness with production parity, atomic SQLite-WAL → Parquet snapshots, cross-compilation to ARM production targets.
 - **Gamified knowledge platforms** — React 19 + TypeScript, 800+ questions across 40+ topics, additive schema migrations through 15+ versions, server-side merge-on-write for offline-first multi-device sync, confidence-vs-accuracy bias correction.
-- **LLM-orchestrated workflow systems** — Python + NetworkX DAG analysis with critical-path resolution, dual-priority decomposition (original intent vs current actionable state), layered AI context architecture cutting token usage 75–90%, conversational interface with hard confirm gates.
+- **LLM-orchestrated workflow systems** — Python + NetworkX DAG analysis with critical-path resolution, dual-priority decomposition (original intent vs current actionable state), conversational interface with hard ASK-PROPOSE-CONFIRM gates.
 
 Four different systems. Won't tell you which is which.
 
 ### How I work
 
+- **Multi-agent throughput, not token efficiency** — fanning out work across parallel Claude workers to squeeze maximum production speed. Tokens are cheap; calendar time is expensive.
 - **Custom Claude Code setup** — 10+ domain-specific skills, 9+ slash commands, 8+ hooks across projects for safety gates, rule re-injection, doc freshness checks, and operational discipline
 - **Project memory discipline** — 448 markdown files across 20 active projects: feedback, lessons, architecture decisions, session handoffs
 - **Hard pre-commit gates** — AI code critic, doc freshness cascades, schema versioning enforcement, supply chain audits, RustSec
