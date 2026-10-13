@@ -19,7 +19,7 @@ Most of my repositories are private: client work, trading and products that aren
   <tr>
     <td align="center" width="20%"><h2>89</h2><sub>repositories<br>since March 2026</sub></td>
     <td align="center" width="20%"><h2>30.4K</h2><sub>contributions<br>since March 2026</sub></td>
-    <td align="center" width="20%"><h2>312B</h2><sub>Claude Code tokens<br>#1 all-time on <a href="https://ccgather.com/u/dprvda">ccgather</a></sub></td>
+    <td align="center" width="20%"><h2>312B</h2><sub>Claude Code tokens<br>#1 all-time</sub></td>
     <td align="center" width="20%"><h2>18 · 11</h2><sub>systems built ·<br>live on own domains</sub></td>
     <td align="center" width="20%"><h2>22</h2><sub>sourced research<br>reports, free to read</sub></td>
   </tr>
@@ -85,11 +85,11 @@ Bespoke automations, each built for a real job. Open any one and watch it work.
 ### № 07 — Activity
 
 <p>
-  <img src="https://dprvda-stats.vercel.app/api?username=dprvda&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide=stars,contribs&show=reviews&custom_title=On%20GitHub&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10" height="165" alt="GitHub stats">
-  <img src="https://dprvda-stats.vercel.app/api/top-langs/?username=dprvda&layout=compact&count_private=true&langs_count=4&hide=html,mdx,css,astro,plpgsql,shell,powershell,c&exclude_repo=carbon-studio,t3code-robinhood-sniper,t3code,ui&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10" height="165" alt="Most used languages">
+  <img src="https://raw.githubusercontent.com/dprvda/dprvda/output/stats.svg" height="165" alt="GitHub stats">
+  <img src="https://raw.githubusercontent.com/dprvda/dprvda/output/langs.svg" height="165" alt="Most used languages">
 </p>
 <p>
-  <img src="https://streak-stats.demolab.com?user=dprvda&background=17140e&border=3a352b&stroke=3a352b&ring=c8401f&fire=c8401f&currStreakNum=f6f3ec&sideNums=f6f3ec&currStreakLabel=c8401f&sideLabels=d9d3c4&dates=a39d8e&border_radius=10" alt="Contribution streak">
+  <img src="https://raw.githubusercontent.com/dprvda/dprvda/output/streak.svg" alt="Contribution streak">
 </p>
 
 <picture>

@@ -1,0 +1,39 @@
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?color_snake=#f6f3ec&color_dots=#1e1a14,#4b2a1c,#7a321f,#a6391f,#c8401f
+            dist/snake-light.svg?color_snake=#17140e&color_dots=#ece7da,#e8c3b5,#dc8f74,#d1633f,#c8401f
+
+      # Pre-render the stat cards so GitHub's image proxy never times out on them.
+      - name: Render stat cards
+        run: |
+          set -euo pipefail
+          fetch() { curl -fsSL --retry 3 --max-time 60 "$1" -o "$2"; grep -q '<svg' "$2"; }
+          fetch "https://dprvda-stats.vercel.app/api?username=dprvda&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide=stars,contribs&show=reviews&custom_title=On%20GitHub&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10&disable_animations=true" dist/stats.svg
+          fetch "https://dprvda-stats.vercel.app/api/top-langs/?username=dprvda&layout=compact&count_private=true&langs_count=4&hide=html,mdx,css,astro,plpgsql,shell,powershell,c&exclude_repo=carbon-studio,t3code-robinhood-sniper,t3code,ui&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10&disable_animations=true" dist/langs.svg
+          fetch "https://streak-stats.demolab.com?user=dprvda&background=17140e&border=3a352b&stroke=3a352b&ring=c8401f&fire=c8401f&currStreakNum=f6f3ec&sideNums=f6f3ec&currStreakLabel=c8401f&sideLabels=d9d3c4&dates=a39d8e&border_radius=10" dist/streak.svg
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
