@@ -81,10 +81,10 @@ body {{ font-family: Geist, sans-serif; color: var(--ink); -webkit-font-smoothin
   background: linear-gradient(90deg, {t['rim']}, transparent 55%) 0 0 / 100% 1px no-repeat,
               linear-gradient(180deg, {t['rim']}, transparent 60%) 0 0 / 1px 100% no-repeat; }}
 .surface {{ position: relative; border-radius: 16px; background: {t['surface_bg']}; box-shadow: {t['surface_edge']}; }}
-.label {{ font-family: GeistMono, monospace; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); }}
-.chip {{ display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 12px; border-radius: 999px;
-  background: {t['chip']}; box-shadow: inset 0 0 0 1px {t['chip_edge']}; font-size: 14px; color: var(--ink2); }}
-.dot {{ width: 7px; height: 7px; border-radius: 50%; }}
+.label {{ font-family: GeistMono, monospace; font-size: 16px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); }}
+.chip {{ display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 15px; border-radius: 999px;
+  background: {t['chip']}; box-shadow: inset 0 0 0 1px {t['chip_edge']}; font-size: 18px; color: var(--ink2); }}
+.dot {{ width: 8px; height: 8px; border-radius: 50%; }}
 .serif {{ font-family: Serif, serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; }}
 .mark {{ background: {t['mark']}; -webkit-background-clip: text; background-clip: text; color: transparent; }}
 """
@@ -105,7 +105,7 @@ def beam(t, w, h):
 
 
 def hero(t):
-    w, h = 1232, 520
+    w, h = 1232, 560
     return f"""<div class="frame" id="shot" style="width:{w}px;height:{h}px;padding:56px 64px">
 {beam(t, w, h)}
 <div style="position:relative;display:flex;flex-direction:column;height:100%">
@@ -114,7 +114,7 @@ def hero(t):
   </div>
   <h1 class="mark" style="margin-top:42px;font-size:104px;line-height:.98;font-weight:500;letter-spacing:-0.045em">Danylo Pravda</h1>
   <div class="serif" style="margin-top:6px;font-size:76px;line-height:1.05;color:var(--ink2)">designer turned agent engineer.</div>
-  <p style="margin-top:28px;max-width:720px;font-size:20px;line-height:1.5;color:var(--ink2)">
+  <p style="margin-top:28px;max-width:860px;font-size:25px;line-height:1.45;color:var(--ink2)">
     Five years of 3D for L'Oréal, Crocs, Lacoste and Breitling.<br>Since March 2026, I build AI-agent systems that do real work.</p>
   <div style="margin-top:auto;display:flex;gap:28px" class="label">
     <span>3D → agents · March 2026</span><span>18 systems · 11 live</span><span>pravda.systems</span>
@@ -131,9 +131,9 @@ def numbers(t):
     ]
     cells = "".join(
         f"""<div style="flex:1;padding:28px 32px;{'border-left:1px solid var(--line);' if i else ''}">
-<div class="mark" style="font-size:52px;font-weight:500;letter-spacing:-0.04em;line-height:1">{n}</div>
-<div style="margin-top:14px;font-size:17px;color:var(--ink)">{a}</div>
-<div style="margin-top:2px;font-size:15px;color:var(--ink3)">{b}</div></div>"""
+<div class="mark" style="font-size:58px;font-weight:500;letter-spacing:-0.04em;line-height:1">{n}</div>
+<div style="margin-top:14px;font-size:21px;color:var(--ink)">{a}</div>
+<div style="margin-top:4px;font-size:18px;color:var(--ink3)">{b}</div></div>"""
         for i, (n, a, b) in enumerate(items)
     )
     return f'<div class="frame" id="shot" style="width:1232px;display:flex">{cells}</div>'
@@ -143,7 +143,7 @@ CARDS = {
     "beamline": dict(
         label="Now · my open project", dot="#009eb9",
         title='Beamline <span class="serif" style="font-size:1.08em">UI</span>',
-        body="React components and complete screens that coding agents can actually design with. 200+ components, 50+ screens.",
+        body="200+ React components and 50+ complete screens that coding agents can design with.",
         foot="beamline.io", logo=True,
     ),
     "automations": dict(
@@ -173,11 +173,11 @@ def card(t, key, side):
     logo = (
         f'<div style="position:absolute;right:30px;top:28px">{LOGO.format(s=44, k=key)}</div>' if c.get("logo") else ""
     )
-    return f"""<div id="shot" style="width:616px;{gutter}"><div class="frame" style="height:256px;padding:30px 32px;display:flex;flex-direction:column">
+    return f"""<div id="shot" style="width:616px;{gutter}"><div class="frame" style="height:300px;padding:30px 32px;display:flex;flex-direction:column">
 {logo}
 <div class="label" style="display:flex;align-items:center;gap:10px;position:relative"><span class="dot" style="background:{c['dot']}"></span>{c['label']}</div>
-<div style="position:relative;margin-top:26px;font-size:38px;font-weight:500;letter-spacing:-0.035em;line-height:1.05">{c['title']}</div>
-<p style="position:relative;margin-top:14px;font-size:17px;line-height:1.5;color:var(--ink2);max-width:500px">{c['body']}</p>
+<div style="position:relative;margin-top:24px;font-size:42px;font-weight:500;letter-spacing:-0.035em;line-height:1.05">{c['title']}</div>
+<p style="position:relative;margin-top:14px;font-size:21px;line-height:1.45;color:var(--ink2);max-width:540px">{c['body']}</p>
 <div class="label" style="position:relative;margin-top:auto;color:var(--ink2)">{c['foot']} &nbsp;→</div>
 </div></div>"""
 
@@ -195,6 +195,6 @@ with sync_playwright() as p:
         for theme, t in THEMES.items():
             pg.set_content(page(t, fn(t)), wait_until="load")
             pg.evaluate("document.fonts.ready")
-            pg.locator("#shot").screenshot(path=str(OUT / f"{name}-{theme}.webp"), omit_background=True)
+            pg.locator("#shot").screenshot(path=str(OUT / f"{name}-{theme}.png"), omit_background=True)
             print(name, theme)
     browser.close()
