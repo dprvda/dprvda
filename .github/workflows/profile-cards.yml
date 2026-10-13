@@ -26,6 +26,7 @@ jobs:
       - name: Render stat cards
         run: |
           set -euo pipefail
+          sudo chown -R "$(id -u):$(id -g)" dist
           fetch() { curl -fsSL --retry 3 --max-time 60 "$1" -o "$2"; grep -q '<svg' "$2"; }
           fetch "https://dprvda-stats.vercel.app/api?username=dprvda&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide=stars,contribs&show=reviews&custom_title=On%20GitHub&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10&disable_animations=true" dist/stats.svg
           fetch "https://dprvda-stats.vercel.app/api/top-langs/?username=dprvda&layout=compact&count_private=true&langs_count=4&hide=html,mdx,css,astro,plpgsql,shell,powershell,c&exclude_repo=carbon-studio,t3code-robinhood-sniper,t3code,ui&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10&disable_animations=true" dist/langs.svg
