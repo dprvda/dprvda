@@ -1,6 +1,7 @@
 <a href="https://pravda.systems"><img src="assets/banner.svg" alt="Danylo Pravda — Machines that run whole businesses." width="100%"></a>
 
 <p align="center">
+  <a href="https://beamline.io"><img src="https://img.shields.io/badge/Now%20building-beamline.io-c8401f?style=for-the-badge&labelColor=17140e" alt="Now building beamline.io"></a>
   <a href="https://pravda.systems"><img src="https://img.shields.io/badge/pravda.systems-17140e?style=for-the-badge&logo=googlechrome&logoColor=f6f3ec" alt="pravda.systems"></a>
   <a href="https://x.com/danylo_pravda"><img src="https://img.shields.io/badge/@danylo__pravda-17140e?style=for-the-badge&logo=x&logoColor=f6f3ec" alt="X: @danylo_pravda"></a>
   <a href="mailto:danylo@pravda.systems"><img src="https://img.shields.io/badge/danylo@pravda.systems-17140e?style=for-the-badge&logo=minutemailer&logoColor=f6f3ec" alt="Email"></a>
@@ -9,11 +10,35 @@
 
 I spent five years as a senior 3D designer for brands like L'Oréal, Crocs, Lacoste and Breitling — always with a layer of scripts under the pictures. One pipeline rendered **6,000 CGI videos** through hundreds of Python scripts gluing Cinema 4D, Houdini, After Effects, Blender and ffmpeg.
 
-In March 2026 I asked Claude to help with one more script and never stopped. Now I'm one engineer running a fleet of AI agents, and I build **machines that take a repetitive business process in and hand back a working automation** — with the receipts to prove it runs.
+In March 2026 I asked Claude to help with one more script and never stopped. Now I'm one engineer running a fleet of AI agents — and Beamline is where both halves of that story meet: a designer's eye for systems, built for coding agents.
 
-Most of my repositories are private: client work, trading and products that aren't out yet. Everything below is public, and every live system runs on its own domain.
+### № 01 — Beamline UI, my main open project
 
-### № 01 — Receipts
+<a href="https://beamline.io"><img src="assets/beamline-hero.webp" alt="Beamline campaign dashboard with performance charts, campaign controls and an AI assistant" width="100%"></a>
+
+**Stop asking your agent to "make it look good."** [Beamline](https://beamline.io) gives Claude Code, Codex, Cursor and any agent that speaks MCP **200+ components and 50+ complete screens**, designed as one system, plus the rules for using them. The agent reads Beamline's menu, picks the right part for each field, installs only those parts as plain React in your repo, and checks its own work. One line changes the look and brand colour of every screen.
+
+<table>
+  <tr>
+    <td align="center" width="25%"><h3>12 min</h3><sub>from one brief to a<br>redesigned app (Codex)</sub></td>
+    <td align="center" width="25%"><h3>38</h3><sub>Beamline parts<br>in use</sub></td>
+    <td align="center" width="25%"><h3>0</h3><sub>fixes the audit<br>asked for</sub></td>
+    <td align="center" width="25%"><h3>5 min</h3><sub>to a new look,<br>4 of 4 screens</sub></td>
+  </tr>
+</table>
+<sub>Our own test run on a plain Next.js + shadcn/ui invoicing app, 7 Oct 2026. The brief never mentioned Beamline.</sub>
+
+<p>
+  <a href="https://beamline.io"><img src="assets/beamline-trading.webp" width="49%" alt="Beamline trading terminal screen"></a>
+  <a href="https://beamline.io"><img src="assets/beamline-agent.webp" width="49%" alt="Beamline AI agent workspace screen"></a>
+</p>
+
+<p>
+  <a href="https://beamline.io"><b>beamline.io</b></a> · <a href="https://github.com/dprvda/beamline">Free MIT sample</a> · <a href="https://beamline.io/components/">Live library</a> · <a href="https://beamline.io/docs">Docs</a>
+  <br><sub>React 19 · TypeScript · Tailwind v4 · Radix · one payment, lifetime updates</sub>
+</p>
+
+### № 02 — Receipts
 
 <table>
   <tr>
@@ -26,9 +51,9 @@ Most of my repositories are private: client work, trading and products that aren
 </table>
 <sub>Figures as of 13 Oct 2026.</sub>
 
-### № 02 — Systems running right now
+### № 03 — Systems running right now
 
-Bespoke automations, each built for a real job. Open any one and watch it work.
+Before Beamline: bespoke automations, each built for a real job. Most of my repositories are private (client work, trading, unreleased products); everything here is public. Open any system and watch it work.
 
 | System | What goes in → what comes out |
 |---|---|
@@ -50,20 +75,19 @@ Bespoke automations, each built for a real job. Open any one and watch it work.
 
 **Agent infrastructure — the tools that make one engineer enough.** [Commonplace](https://pravda.systems/work#commonplace), a cited memory of everything my agents have ever done · [Signet](https://pravda.systems/work#signet), agents ask once from my phone and the answer becomes a standing rule · [ADE](https://pravda.systems/work#ade), one cockpit over a fleet of coding agents · [Shakedown](https://pravda.systems/work#shakedown), acceptance QA that proves its verdict with screenshots · [Slipway](https://pravda.systems/work#slipway), a repo's agent discipline composed from versioned blocks.
 
-### № 03 — On the bench
+### № 04 — On the bench
 
-- **[Beamline](https://beamline.io)** — a React UI system with 200+ components and 50+ screens, made to be installed and edited by coding agents. The free MIT sample is [public](https://github.com/dprvda/beamline).
 - **Trading infrastructure in Rust**, second generation. Private.
 - **AI research and automation for enterprise clients.** Private.
 
-### № 04 — How I work
+### № 05 — How I work
 
 - **One engineer, many agents.** Parallel coding-agent sessions — Claude Code, Codex and others — in isolated git worktrees. Tokens are cheap; calendar time is not.
 - **Evidence or it didn't happen.** Every live system ships with a proof page, measured numbers and dated captures — including what doesn't work yet.
 - **Fail closed.** An AI never approves its own work. If a claim can't be checked against the source, nothing ships.
 - **Rules live in the repo, not in good intentions.** Commit gates, hooks, skills and project memory hold agents to the same standard every session.
 
-### № 05 — Open source
+### № 06 — Open source
 
 <p>
   <a href="https://github.com/dprvda/beamline"><img src="https://dprvda-stats.vercel.app/api/pin/?username=dprvda&repo=beamline&description_lines_count=2&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10" width="49%" alt="beamline"></a>
@@ -72,7 +96,7 @@ Bespoke automations, each built for a real job. Open any one and watch it work.
   <a href="https://github.com/dprvda/diskcleanup"><img src="https://dprvda-stats.vercel.app/api/pin/?username=dprvda&repo=diskcleanup&description_lines_count=2&bg_color=17140e&title_color=f6f3ec&text_color=d9d3c4&icon_color=c8401f&border_color=3a352b&hide_border=false&border_radius=10" width="49%" alt="diskcleanup"></a>
 </p>
 
-### № 06 — Tools
+### № 07 — Tools
 
 <p>
   <img src="https://skillicons.dev/icons?i=rust,ts,react,nextjs,nodejs,python,postgres,sqlite,tailwind,docker,linux,aws,vercel&theme=dark" alt="Rust, TypeScript, React, Next.js, Node.js, Python, PostgreSQL, SQLite, Tailwind, Docker, Linux, AWS, Vercel">
@@ -82,7 +106,7 @@ Bespoke automations, each built for a real job. Open any one and watch it work.
   <img src="https://skillicons.dev/icons?i=blender,ae,pr&theme=dark" alt="Blender, After Effects, Premiere Pro">
 </p>
 
-### № 07 — Activity
+### № 08 — Activity
 
 <p>
   <img src="https://raw.githubusercontent.com/dprvda/dprvda/output/stats.svg" height="165" alt="GitHub stats">

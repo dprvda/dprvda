@@ -84,7 +84,7 @@ els.append(s)
 w = w1 + w2
 s, _ = text(caps, "DANYLO PRAVDA · BUSINESS-AUTOMATION ENGINEER · KYIV", 17, M + w + 10, 64, MUTED, tracking=0.16)
 els.append(s)
-s, w = text(caps, "BUILDING DAILY", 17, W - M, 64, PAPER, tracking=0.16, anchor="end")
+s, w = text(caps, "NOW BUILDING BEAMLINE.IO", 17, W - M, 64, PAPER, tracking=0.16, anchor="end")
 els.append(s)
 dot_x = W - M - w - 16
 els.append(f'<circle class="pulse" cx="{dot_x}" cy="59" r="4.5" fill="{SIGNAL}"/>')
